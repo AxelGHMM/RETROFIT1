@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextProgrammerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID del Programador" />
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextProgrammerId"
+        android:hint="Nombre Completo" />
+
+    <EditText
+        android:id="@+id/editTextNickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFullName"
+        android:hint="Nickname" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNickname"
+        android:hint="Edad"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/checkBoxIsActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAge"
+        android:text="Activo" />
+
+    <Button
+        android:id="@+id/btnAddProgrammer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxIsActive"
+        android:layout_centerHorizontal="true"
+        android:text="Agregar Programador" />
+
+    <Button
+        android:id="@+id/btnGetProgrammerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddProgrammer"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Obtener Info" />
+
+    <Button
+        android:id="@+id/btnUpdateProgrammer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGetProgrammerInfo"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Actualizar Programador" />
+
+    <Button
+        android:id="@+id/btnDeleteProgrammer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdateProgrammer"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Eliminar Programador" />
+
+</RelativeLayout>
